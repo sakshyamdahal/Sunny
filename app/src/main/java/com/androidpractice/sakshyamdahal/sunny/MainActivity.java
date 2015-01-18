@@ -101,7 +101,7 @@ public class MainActivity extends ActionBarActivity {
         currentWeather.setPrecipChance(currently.getDouble("precipProbability"));
         currentWeather.setTemperature(currently.getDouble("temperature"));
         currentWeather.setSummary(currently.getString("summary"));
-        currentWeather.setTimeZone(currently.getString("timezone"));
+        currentWeather.setTimeZone(forecast.getString("timezone"));
 
         return currentWeather;
     }
